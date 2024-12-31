@@ -1,0 +1,104 @@
+.loading-bar-container {
+    width: 45%;
+    height: 3%;
+    background-color: #ba0606;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+    margin-top: 20%;
+}
+
+.loading-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #4f036b98;
+    color: #0a0000;
+    font-weight: bolder;
+    transition: width 0.5s ease-in-out;
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(135deg, #0a0000, #2b0000, #3a0202e6);
+    color: #d10b0b;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    height: 100vh;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+h2 {
+    margin-top: 21%;
+}
+
+.c {
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    margin-bottom: 0px;
+}
+
+#ab {
+    margin-top: 100px;
+}
+
+#ac {
+    margin-top: 50px;
+    margin-right: 0px;
+}
+
+.box {
+    border: 2px solid rgb(25, 18, 18);
+    min-width: 750px;
+    height: max-content;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 10px rgba(88, 1, 88, 0.1), 0 0 20px rgba(100, 2, 104, 0.455), 0 0 40px rgba(110, 3, 110, 0.686), 0 0 80px rgba(120, 3, 143, 0.899);
+    margin-top: 5%;
+    background: linear-gradient(#2c2c2c, #1c1a1a, #151313);
+    animation: glow 3s infinite alternate;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+@keyframes glow {
+    from {
+        transform: scale(1);
+        box-shadow: 0 4px 10px rgba(88, 1, 88, 0.1), 0 0 20px rgba(100, 2, 104, 0.455), 0 0 40px rgba(110, 3, 110, 0.686), 0 0 80px rgba(120, 3, 143, 0.899);
+    }
+
+    to {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(88, 1, 1, 0.275), 0 0 20px rgba(105, 4, 4, 0.608), 0 0 40px rgba(160, 3, 3, 0.712), 0 0 80px rgba(177, 113, 3, 0.899);
+    }
+}
+
+@media(max-width:786px) {
+    .box {
+        min-width: 85%;
+        font-size: large;
+    }
+.c{
+    font-size: 45px;
+}
+}
+@media(max-width:360px) {
+    .box {
+        min-width: 85%;
+        font-size: large;
+    }
+.c{
+    font-size: 35px;
+}
+}
+.box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(177, 113, 3, 0.899), 0 0 30px rgba(160, 3, 3, 0.712);
+}
+#ws{
+    color: rgb(160, 8, 44);
+    font-weight: bolder;
+   padding-left: 2%;
+}
