@@ -20,7 +20,7 @@ function onLoadingComplete() {
   }
   let abc = document.getElementById("a");
   console.log(abc)
-  abc.innerHTML = "<div class=\"box\"><h1 class=\"c\" id=\"ab\"></h1><br><h2 class=\"c\" id=\"ac\"></h2><p id=\"ws\">Here's to new adventures, cherished memories, and dreams coming true in the year ahead! 🥂💫</p><div>"
+  abc.innerHTML = "<div class=\"box\"><h1 class=\"c\" id=\"ab\"></h1><br><h2 class=\"c\" id=\"ac\"></h2><p id=\"ws\">Here's to new adventures, cherished memories, and dreams coming true in the year ahead! 🥂💫 from Sabya & Anil</p><div>"
 
   animateTitle();
   animateYear();
